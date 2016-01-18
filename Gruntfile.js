@@ -330,8 +330,6 @@ module.exports = function (grunt) {
     grunt.registerTask('e2e', ['e2e-build', 'connect', 'nightwatch']);
   }
 
-
-
   // dist: make dist files
   grunt.registerTask('dist', [
     'clean:dist',

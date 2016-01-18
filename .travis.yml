@@ -8,6 +8,7 @@ before_script:
 script:
 - grunt test-travis --verbose
 - if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then grunt saucelabs-test; fi
+- if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then grunt e2e; fi
 before_deploy:
 - npm install
 - grunt build
