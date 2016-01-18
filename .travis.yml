@@ -22,8 +22,8 @@ deploy:
     branch: develop
 addons:
   sauce_connect:
-    username: 'summernoteis'
+    username: 'outsideris'
     access_key:
-      secure: "E9Mq/lKN1xNA+PungEtlDEYqx5Dm52GPuvRMjZPkv5GiuFjof70CuqOIbqSh5YcDvn6/FmPlmlcZVNcXGzKkkSY9qqFpsbmsu2VXmbHlmpjr0Yhm7LQLoZYj+fmrO3WITai6yEyvb8cjGTjHhTjULDORJgC9U4DLfzju5OQFW0Q="
+      secure: "LxMasCP5WsOg+n8XkU0aTZJCLUf0XKVLDl6LbEem1nLOqWjzCOZGWhc+91iBI2yA1ClfgDh8NOahCTLTCU2w8Vy3k6T4X+ILIG2XaCjZKfSmBTc5RUjuzFXWpK8nQq6CKqbP3BO60LkzCHBbdovfwi2u4dVgq1UQA+cHqxJi9FY="
 after_success:
 - grunt coveralls:travis
